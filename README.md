@@ -34,17 +34,17 @@ Allows you to pull the messages you received and sent.
 
 ### Options
 
-type: (Optional). Type of message to retrieve. Possible values: IN or OUT.
+<b>type:</b> (Optional). Type of message to retrieve. Possible values: IN or OUT.
 
-number: (Optional). Get IN or OUT messsages to or from this number.
+<b>number:</b>  (Optional). Get IN or OUT messsages to or from this number.
 
-markaspulled: (Optional). If you set this value in 1 you will mark your results as pulled.
+<b>markaspulled:</b>  (Optional). If you set this value in 1 you will mark your results as pulled.
 
-getnotpulledonly: (Optional). If you set this value in 1 you will retrieve only results that you don't have marked as pulled. 
+<b>getnotpulledonly:</b>  (Optional). If you set this value in 1 you will retrieve only results that you don't have marked as pulled. 
 
-limit: (Default 100).
+<b>limit:</b>  (Default 100).
 
-orderdesc: (Default most recent). If you set this value in 0 you will retrieve result from oldest to newest.
+<b>orderdesc:</b>  (Default most recent). If you set this value in 0 you will retrieve result from oldest to newest.
 
 ```ruby
 messages = apiwha.pull_messages(options)
