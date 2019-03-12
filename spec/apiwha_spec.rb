@@ -7,9 +7,9 @@ RSpec.describe Apiwha do
     expect(Apiwha::VERSION).not_to be nil
   end
 
-  it 'check if messages call is an Array' do
-    VCR.use_cassette 'messages' do
-      result = Apiwha.new(api_key).messages
+  it 'check if pull_messages call is an Array' do
+    VCR.use_cassette 'pull_messages' do
+      result = Apiwha.new(api_key).pull_messages
       expect(result).to be_kind_of(Array)
     end
   end

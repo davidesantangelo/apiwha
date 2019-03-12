@@ -28,6 +28,29 @@ apiwha = Apiwha.new('Your secret API key')
 ```
 Your secret API key. You can generate it in your dashboard from https://panel.apiwha.com/
 
+Allows you to pull the messages you received and sent.
+
+### Options
+
+type: (Optional). Type of message to retrieve. Possible values: IN or OUT.
+
+number: (Optional). Get IN or OUT messsages to or from this number.
+
+markaspulled: (Optional). If you set this value in 1 you will mark your results as pulled. This parameter is useful to prevent the result from being processed twice.
+
+getnotpulledonly: (Optional). If you set this value in 1 you will retrieve only results that you don't have marked as pulled. 
+
+limit: (Default 100).
+
+orderdesc: (Default most recent). If you set this value in 0 you will retrieve result from oldest to newest.
+
+```ruby
+messages = apiwha.pull_messages(options)
+
+```
+## Pull Messages
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
