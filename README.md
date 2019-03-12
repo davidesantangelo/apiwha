@@ -51,6 +51,28 @@ messages = apiwha.pull_messages(options)
 
 ```
 
+## Send Message
+
+Allows you to send messages to any destination that wrote to you. 
+
+<b>number:</b> Destination number. Enter the number with country code. You can check the number formatting in https://faq.whatsapp.com/en/general/21016748
+
+<b>text:</b> Text of message to send or URL of media to send.
+
+<i>If this text is an URL that begins with "http" and finishes with ".png" or ".jpg" the system will send a picture.</i>
+
+<i>If this text is an URL that begins with "http" and finishes with ".ogg" the system will send an audio.</i>
+
+<i>If this text is an URL that begins with "http" and finishes with ".pdf" the system will send the pdf document.</i>
+
+<b>custom_data:</b> You can add your custom data in each message that you send. Then, you will receive this custom data by webhook events.
+
+
+```ruby
+apiwha.send_message(options)
+
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
