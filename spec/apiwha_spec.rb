@@ -1,7 +1,7 @@
 require 'vcr'
 
 RSpec.describe Apiwha do
-  let(:api_key) { "7MYIVBY90WRH2H758JB8" }
+  let(:api_key) { "api key" }
 
   it "has a version number" do
     expect(Apiwha::VERSION).not_to be nil
