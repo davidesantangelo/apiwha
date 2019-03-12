@@ -28,6 +28,8 @@ apiwha = Apiwha.new('Your secret API key')
 ```
 Your secret API key. You can generate it in your dashboard from https://panel.apiwha.com/
 
+## Pull Messages
+
 Allows you to pull the messages you received and sent.
 
 ### Options
@@ -36,7 +38,7 @@ type: (Optional). Type of message to retrieve. Possible values: IN or OUT.
 
 number: (Optional). Get IN or OUT messsages to or from this number.
 
-markaspulled: (Optional). If you set this value in 1 you will mark your results as pulled. This parameter is useful to prevent the result from being processed twice.
+markaspulled: (Optional). If you set this value in 1 you will mark your results as pulled.
 
 getnotpulledonly: (Optional). If you set this value in 1 you will retrieve only results that you don't have marked as pulled. 
 
@@ -48,8 +50,6 @@ orderdesc: (Default most recent). If you set this value in 0 you will retrieve r
 messages = apiwha.pull_messages(options)
 
 ```
-## Pull Messages
-
 
 ## Development
 
