@@ -35,9 +35,20 @@ Allows you to pull the messages you received and sent.
 
 ### Options
 
-<b>type:</b> (Optional). Type of message to retrieve. Possible values: IN or OUT.
+```ruby
+  options = {
+    number: nil,
+    type: nil, 
+    markaspulled: "0", 
+    getnotpulledonly: "0", 
+    limit: 100, 
+    orderdesc: "1"
+  }
+```
 
 <b>number:</b>  (Optional). Get IN or OUT messsages to or from this number.
+
+<b>type:</b> (Optional). Type of message to retrieve. Possible values: IN or OUT.
 
 <b>markaspulled:</b>  (Optional). If you set this value in 1 you will mark your results as pulled.
 
