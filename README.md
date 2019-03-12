@@ -23,6 +23,7 @@ Or install it yourself as:
 
 ```ruby
 require 'apiwha'
+
 apiwha = Apiwha.new('Your secret API key')
 
 ```
@@ -47,7 +48,11 @@ Allows you to pull the messages you received and sent.
 <b>orderdesc:</b>  (Default most recent). If you set this value in 0 you will retrieve result from oldest to newest.
 
 ```ruby
-messages = apiwha.pull_messages(options)
+messages = apiwha.pull_messages(params: options)
+```
+
+``` ruby
+messages = apiwha.pull_messages(params: { limit: 10 })
 ```
 
 ```
