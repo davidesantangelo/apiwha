@@ -22,14 +22,11 @@ module Apiwha
   		@api_key = api_key
   	end
 
-    # Pull messages
     def pull_messages(params: DEFAULT_OPTIONS)
       response = RestClient.get("#{API_URL}/get_messages.php?apikey=#{@api_key}", { params: params })
-      
       response(response: response)
     end
 
-    # Send message
     def send_message(text: , number: , custom_data: {})
       payload = { 
         text:  text, 
@@ -43,12 +40,16 @@ module Apiwha
       response(response: response)
     end
 
+    def get_credit
+      response = RestClient.get("#{API_URL}/get_credit.php?apikey=#{@api_key}")
+      
+      response(response: response)
+    end
+
     private
 
     def response(response: )
-      response = JSON.parse(response)
-
-      return response.body if response['success']
+      return JSON.parse(response.body) if response.code.to_i == 200
       
       raise Error.new(response)
     end

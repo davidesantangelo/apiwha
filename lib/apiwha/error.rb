@@ -4,7 +4,7 @@ module Apiwha
     attr_reader :reason
 
     def initialize(response)
-      @reason = response['reason']
+      @reason = response
     end
 
     def message

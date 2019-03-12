@@ -49,7 +49,15 @@ Allows you to pull the messages you received and sent.
 ```ruby
 messages = apiwha.pull_messages(options)
 
+
+[
+    {"id":"14409287","number":"391112223456","from":"391112223456","to":"39886677822","type":"IN","text":"test hello message","creation_date":"2019-03-11 14:29:51","process_date":"2019-03-11 14:29:51","failed_date":null,"custom_data":null},
+    
+    {"id":"14409219","number":"393938491113","from":"393891986619","to":"393938491113","type":"IN","text":"test message","creation_date":"2019-03-11 14:28:53","process_date":"2019-03-11 14:28:53","failed_date":null,"custom_data":null}
+]
+
 ```
+
 
 ## Send Message
 
@@ -70,6 +78,17 @@ Allows you to send messages to any destination that wrote to you.
 
 ```ruby
 apiwha.send_message(options)
+
+```
+
+## Get Credit
+
+Allows you to query about your credit
+
+```
+{
+  "credit":45
+}
 
 ```
 
