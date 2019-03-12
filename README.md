@@ -48,8 +48,9 @@ Allows you to pull the messages you received and sent.
 
 ```ruby
 messages = apiwha.pull_messages(options)
+```
 
-
+```
 [
     { 
       "id":"14409287",
@@ -106,6 +107,11 @@ apiwha.send_message(options)
 ## Get Credit
 
 Allows you to query about your credit
+
+```ruby
+credit = apiwha.get_credit
+
+```
 
 ```
 {
