@@ -52,7 +52,7 @@ messages = apiwha.pull_messages(params: options)
 ```
 
 ``` ruby
-messages = apiwha.pull_messages(params: { limit: 10 })
+messages = apiwha.pull_messages(params: { limit: 2 })
 ```
 
 ```
