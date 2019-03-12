@@ -1,6 +1,4 @@
-require 'uri'
 require 'json'
-require 'hashie'
 require 'rest-client'
 
 module Apiwha

@@ -39,11 +39,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "vcr", "~> 3.0"
 
   spec.required_ruby_version = ">= 2.3"
 
-  spec.add_dependency "rest-client"
-  spec.add_dependency "json"
-  spec.add_dependency "hashie"
+  spec.add_dependency "rest-client", "~> 2.0"
+  spec.add_dependency "json", "~> 2.0"
 end
