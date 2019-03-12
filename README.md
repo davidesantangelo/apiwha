@@ -1,8 +1,7 @@
 # Apiwha
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/apiwha`. To experiment with that code, run `bin/console` for an interactive prompt.
+A tiny ruby wrapper around ApiWha API. If you want know more visit http://www.apiwha.com website.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'apiwha'
+apiwha = Apiwha.new('Your secret API key')
+
+```
+Your secret API key. You can generate it in your dashboard from https://panel.apiwha.com/
 
 ## Development
 
